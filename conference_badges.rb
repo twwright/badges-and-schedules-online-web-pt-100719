@@ -12,5 +12,5 @@ end
 
 printer(array)
   batch_badge_maker(array).each {|str| puts str}
-  assign_rooms(array).each {|str} puts str}
+  assign_rooms(array).each {|str| puts str}
 end
