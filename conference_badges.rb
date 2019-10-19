@@ -7,7 +7,7 @@ batch_badge_maker(names)
 end
 
 assign_rooms(rooms)
-  rooms.collect_with_index {|person, idx| "Hello, #{person}! You'll be assigned to room #{idx + 1}!"}
+  rooms.collect.with_index {|person, idx| "Hello, #{person}! You'll be assigned to room #{idx}!"}
 end
 
 printer(array)
