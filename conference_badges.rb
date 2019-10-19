@@ -3,7 +3,7 @@ def badge_maker(name)
 end
 
 def batch_badge_maker(names)
-  names.collect {|name| badger_maker(name)}
+  names.collect {|name| badge_maker(name)}
 end
 
 def assign_rooms(rooms)
