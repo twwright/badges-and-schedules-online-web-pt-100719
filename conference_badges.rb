@@ -2,8 +2,8 @@ def badge_maker(name)
   "Hello, my name is #{name}."
 end
 
-def batch_badge_maker(names)
-  names.map {|name| badge_maker(name)}
+def batch_badge_creator(names)
+  names.collect {|name| badge_maker(name)}
 end
 
 def assign_rooms(rooms)
@@ -11,6 +11,6 @@ def assign_rooms(rooms)
 end
 
 def printer(array)
-  batch_badge_maker(array).each {|str| puts str}
+  batch_badge_creator(array).each {|str| puts str}
   assign_rooms(array).each {|str| puts str}
 end
