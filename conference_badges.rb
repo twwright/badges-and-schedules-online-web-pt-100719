@@ -13,4 +13,3 @@ end
 printer(array)
   assignments = []
   assignments.collect {|}
-  
