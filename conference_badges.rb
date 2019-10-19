@@ -7,9 +7,10 @@ batch_badge_maker(names)
 end
 
 assign_rooms(rooms)
-  rooms.collect.with_index {|person, idx| "Hello, #{person}! You'll be assigned to room #{idx}!"}
+  rooms.collect.with_index(1) {|person, idx| "Hello, #{person}! You'll be assigned to room #{idx}!"}
 end
 
 printer(array)
-  assignments = []
-  assignments.collect {|}
+  batch_badge_maker(array).each {|str| puts str}
+  assign_rooms(array).each {|str} puts str}
+end
